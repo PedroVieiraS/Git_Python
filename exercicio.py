@@ -1,4 +1,5 @@
 
+import math
 
 def calcular_azulejos():
     comprimento = float(input(""))
@@ -29,3 +30,18 @@ def calculo_combustivel():
     print("media consumo ", media_consumo_kml)
     print("gasto com gasolina", gasto_gasolina)
     print("lucro ", lucro)
+
+
+def calculo_lampada():
+
+    largura = float(input("digite a largura: "))
+    comprimento = float(input("digite o comprimento: "))
+
+    metro_quadrado = largura * comprimento
+
+    potencia_lampada = int(input("qual a pontencia da lampada? "))
+
+    print("lampadas necessarias: ", math.ceil((metro_quadrado*3)/potencia_lampada))
+
+
+
